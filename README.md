@@ -1,26 +1,31 @@
-surveillance
-============
+template
+========
 
-監視器位置與經緯度座標
-
-
-Synopsis
-============
-
-* 原始檔案位置: https://raw.github.com/zbryikt/surveillance/master/surveillance.xslx
-* 預先轉換的經緯度列表: https://raw.github.com/zbryikt/surveillance/master/surveillance.csv
-  * 轉換過程有失誤導致資料有一半集中在一個點, 所以僅供參考
-* 原始資料來源: 台北市警局
+a web template, for simple frontend. it contains a simple webserver, watch daemon, and a makefile for offline building. It uses jade, sass and livescript to build a web page.
 
 
-License
-============
+Usage
+========
 
-CC0 - Public Domain
+Simply edit index.jade, index.sass and index.ls, and type 'make' to build these into index.html, index.css and index.js.
+
+You can also watch all your changes and build them automatically. To do so, run
+
+    npm i
+
+once (for installing all dependencies), then run
+
+    npm start
+
+It will start watching all sass, jade and livescript changes, and also run a simple web server listening on localhost:9999.
 
 
-Credit
-============
+Configuration
+========
 
-* 台北市警察局 (for providing the data)
-* Mimi chen (for acquiring the data)
+by default, some javascript libraries are included. Config to use them or cdn by editing following code in index.jade:
+
+    - var usecdn = false
+    - var lib = { jquery: true, d3js: true, angular: true, bootstrap: false, semantic: true }
+    - var assets = "/assets"
+
