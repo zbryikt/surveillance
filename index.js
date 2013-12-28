@@ -17,7 +17,9 @@ mainCtrl = function($scope){
   };
   countCamera = function(m, numStyles){
     var v;
-    v = 1;
+    v = m.reduce(function(a, b){
+      return a + 1;
+    }, 0);
     return {
       text: v + "",
       index: parseInt(v / 100)
