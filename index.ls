@@ -13,8 +13,9 @@ mainCtrl = ($scope) ->
     zoom-on-click: true
 
   count-camera = (m, num-styles) -> do
-    v = (m.reduce ((a,b) -> b.data.count + a), 0)
-    #return text: "#{v}", index: parseInt(v / 100)
+    # use this only if you want to count every single camera even at the same lat lng.
+    # v = (m.reduce ((a,b) -> b.data.count + a), 0)
+    v = 1
     return text: "#{v}", index: parseInt(v / 100)
 
   map = new google.maps.Map document.getElementById(\map-node), map-option
