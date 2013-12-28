@@ -21,3 +21,10 @@ html(lang="en")
     #toggle.btn.btn-default(ng-click="clusterIsOn=!clusterIsOn",ng-class="{true:'active',false:''}[clusterIsOn]") 切換 Cluster
     #wait 等等唷~
     #title 台北監視器的位置分佈圖
+    #legend
+      .item
+        .block(style="background-image:url(poi.png)")
+        .name 有一個監視器的點
+      .item
+        .block(style="background-image:url(poi-more.png)")
+        .name 有多個監視器的點

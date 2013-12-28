@@ -25,5 +25,15 @@
     <div id="toggle" ng-click="clusterIsOn=!clusterIsOn" ng-class="{true:'active',false:''}[clusterIsOn]" class="btn btn-default">切換 Cluster</div>
     <div id="wait">等等唷~</div>
     <div id="title">台北監視器的位置分佈圖</div>
+    <div id="legend">
+      <div class="item">
+        <div style="background-image:url(poi.png)" class="block"></div>
+        <div class="name">有一個監視器的點</div>
+      </div>
+      <div class="item">
+        <div style="background-image:url(poi-more.png)" class="block"></div>
+        <div class="name">有多個監視器的點</div>
+      </div>
+    </div>
   </body>
 </html>

@@ -41,3 +41,30 @@ html, body {
   line-height: 24px;
   font-weight: 900;
   z-index: 300; }
+
+#legend {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  width: 145px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  background: white;
+  padding: 5px 8px;
+  margin: 10px;
+  z-index: 300; }
+  #legend .item {
+    height: 22px; }
+    #legend .item .block {
+      margin: 2px;
+      width: 15px;
+      height: 18px;
+      border-radius: 2px;
+      border: 1px solid #cccccc;
+      display: inline-block; }
+    #legend .item .name {
+      height: 16px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 13px;
+      margin-top: 2px; }
